@@ -1,5 +1,4 @@
 // Read input file and display on canvas
-
 const inputFile = document.getElementById("file");
 const preview = document.getElementById("canvas");
 const contextPreview = preview.getContext('2d');
@@ -22,3 +21,8 @@ inputFile.onchange = function(e) {
 
     reader.readAsDataURL(file);
 };
+
+// Javascript draws the image to a <canvas>
+// Read pixel data using canvas.getContext("2d).getImageData()
+// Convert brightness levels to characters using a predefined ASCII ramp
+// Render output as <pre>
