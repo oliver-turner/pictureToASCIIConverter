@@ -25,6 +25,7 @@ inputFile.onchange = (e) => {
     reader.readAsDataURL(file);
 };
 
+// Read pixel data using canvas.getContext("2d).getImageData()
 const toAscii = (canvas) => {
     const context = canvas.getContext('2d');
     const imgData = context.getImageData(0, 0, canvas.width, canvas.height);
@@ -43,7 +44,7 @@ const toAscii = (canvas) => {
 } 
 
 
-// Read pixel data using canvas.getContext("2d).getImageData()
+
 
 
 
